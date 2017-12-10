@@ -19,8 +19,9 @@ para correr la prueba solo colocar en consola: npm test
   , access_token_secret:  'xSmdvq6ecCRI1n9k7VWZFinf2Dy9uXN0SVPUbqkzsz2vq'
   });
 
-//EJECUCIÓN
 describe('GET /users/show', () => {
+
+  //EJECUCIÓN
   it('debe mostrar un usuario que existe', (done) => {
     /*
     Utilicé mi usuario de Twitter para la prueba, el propio Twit nos proporciona una función llamada 'get'
