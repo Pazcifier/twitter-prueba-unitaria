@@ -13,10 +13,10 @@ para correr la prueba solo colocar en consola: npm test
   los keys y tokens necesarios de la aplicación
   */
   var Twitter = new Twit ({
-    consumer_key:         'cH8V0uRpDcToXC44B5D35uZMj'
-  , consumer_secret:      'HlgfhGUzFkQASnSWKFpqBksuew1N5mbCpZc2m4o67vzEN5ca9p'
-  , access_token:         '896600635902226432-lR2Bz1Bf0Zl5VYDSi1qEZOdOPAYaKsJ'
-  , access_token_secret:  'xSmdvq6ecCRI1n9k7VWZFinf2Dy9uXN0SVPUbqkzsz2vq'
+    consumer_key:         '<CONSUMER_KEY>'
+  , consumer_secret:      '<CONSUMER_SECRET>'
+  , access_token:         '<ACCESS_TOKEN>'
+  , access_token_secret:  '<ACCESS_TOKEN_SECRET>'
   });
 
 describe('GET /users/show', () => {
@@ -29,7 +29,7 @@ describe('GET /users/show', () => {
     Este get como lo estoy trabajando lo que hace es que entra elas pruebasn Twitter y verifica si existe un usuario
     con el username (screen_name) que le estoy proporcionando
     */
-    var usuario = 'Pazcifier'
+    var usuario = '<USERNAME>'
     Twitter.get('users/show', {screen_name: usuario}, function(err, data, res) {
 
       //VERIFICACIÓN
